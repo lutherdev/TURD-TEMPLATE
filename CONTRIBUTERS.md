@@ -40,3 +40,28 @@ INSTRUCTIONS TO THE CHOSEN ONES
 1. Clone the repo
 2. Install dependencies by "composer install", ONLY IF THERE IS composer.json and composer.lock file existing!
 3. ...
+
+
+<!--
+[PROJECT MANAGER/ QUALITIY ASS]
+-decision
+-nakasalalay lahat 
+-documentation
+
+[DATABASE ADMIN]
+-taga check if tama mga data
+-connection ng database
+-dapat matransfer DB from computer to another comp
+
+[DESIGNER]
+-frontend(design and layout sht)
+-backend(transfer of info from DB to System
+
+
+KEEP IN MIND
+-commits
+-CRUD
+
+2 WEEKS
+
+-->
