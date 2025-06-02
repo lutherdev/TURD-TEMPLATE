@@ -23,3 +23,9 @@ INSTRUCTIONS TO THE CHOSEN ONES
 - COMMIT MESSAGES
 - IMPLEMENT DATABASE
 - IMPLEMENT CRUD
+
+
+# USE
+1. Live Share Extension for multiple coding
+2. local xampp or composer for testing
+3. 
