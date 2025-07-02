@@ -1,0 +1,23 @@
+{
+    "name": "pingweiii/ad-meeting-calendar",
+    "type": "project",
+    "authors": [
+        {
+            "name": "pingweiii",
+            "email": "pwchen31@gmail.com"
+        },
+        {
+            "name": "lutherdev",
+            "email": "lutherdev@gmail.com"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8000 router.php",
+        "postgresql:reset": "php utils/dbResetPostgresql.util.php",
+        "postgresql:seed": "php utils/dbSeederPostgresql.util.php",
+        "postgresql:migrate": "php utils/dbMigratePostgresql.util.php"
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
