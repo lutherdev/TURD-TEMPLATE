@@ -11,6 +11,7 @@ function head($pageTitle, $pageRef){
     </head>
     <body>
             <?php echo "abababbababababa";
+            echo "wawwww";
 }
 ?>
 
