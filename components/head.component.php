@@ -10,7 +10,8 @@ function head($pageTitle, $pageRef){
         <link rel="stylesheet" href="assets/css/<?php echo $pageRef;?>.css">
     </head>
     <body>
-            <?php
+            <?php echo "abababbababababa";
+            echo "wawwww";
 }
 ?>
 
