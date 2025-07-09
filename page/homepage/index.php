@@ -30,6 +30,16 @@ $cards = [
         </div>
     </main>
 
+    <main class="main2">
+        <div class="card-container2">
+            <?php foreach ($cards as $text): ?>
+                <div class="card2">
+                    <p><?= $text ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </main>
+
     <footer class="footer">
         <p>&copy; <?= date("Y") ?> My Website</p>
     </footer>
