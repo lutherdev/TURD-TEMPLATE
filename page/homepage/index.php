@@ -2,9 +2,7 @@
 $pageTitle = "My Simple PHP Home Page";
 $cards = [
     "Welcome to My Website!",
-    "Explore our services and features.",
-    "Built with PHP and Flexbox layout.",
-    "Fully responsive and easy to customize."
+    "Explore our services and features."
 ];
 ?>
 
@@ -39,9 +37,5 @@ $cards = [
             <?php endforeach; ?>
         </div>
     </main>
-
-    <footer class="footer">
-        <p>&copy; <?= date("Y") ?> My Website</p>
-    </footer>
 </body>
 </html>
