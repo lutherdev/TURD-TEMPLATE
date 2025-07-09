@@ -37,5 +37,9 @@ $cards = [
             <?php endforeach; ?>
         </div>
     </main>
+
+    <footer class="footer">
+        <p>&copy; <?= date("Y") ?> My Website</p>
+    </footer>
 </body>
 </html>
