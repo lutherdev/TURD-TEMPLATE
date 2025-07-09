@@ -51,6 +51,41 @@ $team_members = [
             color: #ffaa00;
             font-weight: bold;
         }
+        .join-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px auto;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+        .join-button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        .join-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .server-ip {
+            background-color: #333;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +96,13 @@ $team_members = [
         <p>Welcome to <span class="minecraft-icon"><?php echo $server_name; ?></span>, a Minecraft community established in <?php echo $established; ?>.</p>
         <p>We're currently running Minecraft <?php echo $current_version; ?> with a focus on survival gameplay, creative building, and community events.</p>
         
+        <div class="button-container">
+            <a href="minecraft://?addServer=<?php echo $server_name; ?>%20Server&server=<?php echo $server_ip; ?>" class="join-button">
+                JOIN OUR SERVER NOW
+            </a>
+            <p>Or use IP: <span class="server-ip"><?php echo $server_ip; ?></span></p>
+        </div>
+        
         <h2>Our Team</h2>
         <?php foreach ($team_members as $member): ?>
             <div class="team-member">
@@ -69,9 +111,11 @@ $team_members = [
             </div>
         <?php endforeach; ?>
         
-        <h2>Join Us</h2>
-        <p>Connect to our server at: <strong>mc.<?php echo strtolower($server_name); ?>.com</strong></p>
-        <p>We welcome players of all skill levels to join our growing community!</p>
+        <div class="button-container">
+            <a href="discord.gg/yourinvite" class="join-button" style="background-color: #5865F2;">
+                JOIN OUR DISCORD
+            </a>
+        </div>
     </div>
 </body>
 </html>
