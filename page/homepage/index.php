@@ -1,6 +1,11 @@
 <?php
 $pageTitle = "My Simple PHP Home Page";
-$welcomeMessage = "Welcome to My Website!";
+$cards = [
+    "Welcome to My Website!",
+    "Explore our services and features.",
+    "Built with PHP and Flexbox layout.",
+    "Fully responsive and easy to customize."
+];
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +21,12 @@ $welcomeMessage = "Welcome to My Website!";
     </header>
 
     <main class="main">
-        <div class="card">
-            <p><?= $welcomeMessage ?></p>
-            <p>This page uses Flexbox and external CSS.</p>
+        <div class="card-container">
+            <?php foreach ($cards as $text): ?>
+                <div class="card">
+                    <p><?= $text ?></p>
+                </div>
+            <?php endforeach; ?>
         </div>
     </main>
 
