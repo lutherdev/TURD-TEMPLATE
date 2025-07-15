@@ -12,6 +12,7 @@ navHeader($navList);
             <div id="hero-text">
                 <h1>Welcome Programmer!</h1>
                 <p>Discover the basics of PHP!</p>
+                <p>Just another test</p>
                 <a href="page/tutorial-page/index.php" class="btn"> PHP BASICS </a>
             </div>
             
